@@ -18,6 +18,8 @@ body {
     font-family: 'Lato', sans-serif;
     margin: 0;
 }
+
+/* animated pics */
 .vibeR{
   display: flex;
   width: auto;
@@ -25,16 +27,6 @@ body {
   position: absolute;
   transform: translate(120%, -40%);
 }
-
-/* .vibeL{
-  display: flex;
-  width: auto;
-  height: 17rem;
-  position: absolute;
-  transform: translate(-120%, 40%);
-  animation-name: bounce;
-  animation-duration: infinite;
-} */
 
 .vibeL {
   display: flex;
@@ -73,6 +65,7 @@ body {
 	60% {transform: translateY(-15px);}
 }
 
+/* music container styles */
 .music_container{
     background-color: #fff;
     border-radius: 15px;
@@ -128,15 +121,6 @@ body {
       transform: rotate(360deg);
     }
 }
-
-/* @keyframes bounce {
-  0% {
-    transform: bounce(0);
-  }
-  100% {
-    transform: bounce(360deg);
-  }
-} */
 
 .navigation {
   display: flex;

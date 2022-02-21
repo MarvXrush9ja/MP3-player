@@ -20,26 +20,25 @@ body {
 }
 
 /* animated pics */
-.vibeR{
+.vibe{
   display: flex;
   width: auto;
   height: 17rem;
   position: absolute;
-  transform: translate(120%, -40%);
+  animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+	-moz-animation: bounce 2s infinite;
+	-o-animation: bounce 2s infinite;
+}
+
+.vibe.vibeR{
+  right: 16rem;
+  top: 10rem;
 }
 
 .vibeL {
-  display: flex;
-  width: auto;
-  height: 17rem;
-	position: absolute;
   left: 14rem;
   bottom: 5rem;
-  /* transform: translate(-120%, 40%); */
-	animation: bounce 2s infinite;
-	-webkit-animation: bounce 2s infinite;
-	-moz-animation: bounce 2s infinite;
-	-o-animation: bounce 2s infinite;
 }
  
 @-webkit-keyframes bounce {

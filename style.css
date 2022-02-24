@@ -5,18 +5,22 @@
 }
 
 body {
-    background-image: linear-gradient(
-      0deg,
-      rgba(247, 247, 247, 1) 23.8%,
-      rgba(252, 221, 221, 1) 92%
-    );
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Lato', sans-serif;
-    margin: 0;
+  background-image: linear-gradient(
+    0deg,
+    rgba(247, 247, 247, 1) 23.8%,
+    rgba(252, 221, 221, 1) 92%
+  );
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+}
+
+.darkmode-background {
+  background: none !important;
 }
 
 /* animated pics */
@@ -66,31 +70,43 @@ body {
 
 /* music container styles */
 .music_container{
-    background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 0 20px 20px 0 rgba(252, 169, 169, 0.6);
-    display: flex;
-    padding: 20px 30px;
-    position: relative;
-    margin: 100px 0;
-    z-index: 10;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 20px 20px 0 rgba(252, 169, 169, 0.6);
+  display: flex;
+  /* width: fit-content;
+  align-items: center !important;
+  justify-content: center !important; */
+  padding: 20px 30px;
+  position: relative;
+  margin: 100px 0;
+  z-index: 10;
+}
+
+.darkmode--activated .music_container {
+  background-color: rgb(235, 235, 235);
+  box-shadow: 0 20px 20px 0 rgba(255, 148, 148, 0.658);
 }
 
 .img_container{
-    position: relative;
-    width: 110px;
+  position: relative;
+  width: 110px;
 }
 
 .img_container::after {
-    content: '';
-    background-color: #fff;
-    height: 20px;
-    width: 20px;
-    position: absolute;
-    left: 50%;
-    bottom: 50%;
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
+  content: '';
+  background-color: #fff;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.darkmode--activated .img_container::after {
+  background-color: rgb(235, 235, 235);
 }
 
 .img_container img {
@@ -138,9 +154,18 @@ body {
   margin: 0 20px;
 }
 
+.darkmode--activated .action-btn {
+  background-color: rgb(235, 235, 235);
+  color: #5a595a;
+}
+
 .action-btn-big {
   color: #cdc2d0;
   font-size: 30px;
+}
+
+.darkmode--activated .action-btn-big {
+  color: #5a595a;
 }
   
 .action-btn:focus {

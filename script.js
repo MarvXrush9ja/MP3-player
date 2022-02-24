@@ -103,6 +103,12 @@ playBtn.addEventListener('click', () => {
     }
 });
 
+// dark theme
+function addDarkmodeWidget() {
+  new Darkmode().showWidget();
+}
+window.addEventListener('load', addDarkmodeWidget);
+
 // Change song
 prevBtn.addEventListener('click', prevSong);
 nextBtn.addEventListener('click', nextSong);

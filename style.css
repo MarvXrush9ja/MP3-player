@@ -333,11 +333,22 @@ h1{
   transition: width 0.1s linear;
 }
 
+#checkbox:checked + label .switch-ball{
+  background-color: white;
+  transform: translateX(24px);
+  transition: transform 0.3s linear;
+}
+
 @media (max-width: 768px) {
   h1{
       font-size: large;
       text-align: center;
     }
+
+  .toggle{
+      padding: 4px 8px;
+    }
+
   .img_container{
     position: relative;
     width: 80px;
@@ -360,8 +371,3 @@ h1{
     }
 }
 
-#checkbox:checked + label .switch-ball{
-  background-color: white;
-  transform: translateX(24px);
-  transition: transform 0.3s linear;
-}

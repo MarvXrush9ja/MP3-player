@@ -339,7 +339,7 @@ h1{
   transition: transform 0.3s linear;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 640px) {
   h1{
       font-size: large;
       text-align: center;
@@ -352,6 +352,37 @@ h1{
   .img_container{
     position: relative;
     width: 80px;
+  }
+
+  .clock{
+    width: 80px;
+    height: 80px;
+  }
+
+  .needle{
+    height: 20px;
+  }
+
+  .needle.minute{
+    height: 30px;
+  }
+
+  .needle.seconds{
+    height: 30px;
+  }
+
+  .time{
+    font-size: 20px;
+  }
+
+  .date{
+    font-size: 8px;
+  }
+
+  .date .circle{
+    height: 16px;
+    width: 16px;
+    font-size: 9px;
   }
   
   .img_container::after {

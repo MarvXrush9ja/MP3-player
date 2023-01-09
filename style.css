@@ -388,6 +388,7 @@ h1{
 
   .music_container{
     margin: 50px 0;
+    width: 350px;
   }
   
   .img_container::after {

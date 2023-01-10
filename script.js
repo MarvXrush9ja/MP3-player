@@ -169,3 +169,5 @@ audio.addEventListener('timeupdate', updateProgress);
 progressContainer.addEventListener('click', setProgress)
 
 audio.addEventListener('ended', nextSong);
+
+// to add music api to generate songs
